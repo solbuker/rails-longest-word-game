@@ -1,0 +1,7 @@
+<h1>Your results:</h1>
+<p>Your attempt: <%= @word %></p>
+<p><%= @hash[:message] %></p>
+<% if @hash[:message] == 'Well done!'%>
+  <p>Your time: <%= @hash[:time] %> seconds</p>
+  <p>Your score: <%= @hash[:score] %></p>
+<% end %>
